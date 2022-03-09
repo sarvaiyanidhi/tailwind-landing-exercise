@@ -18,8 +18,52 @@
 
 <body>
   <!-- Header Starts -->
-  <header class="mx-auto px-8 bg-cover bg-no-repeat" style="background-image: url('img/hero-image.jpeg');">
+  <header class="mx-auto px-8 bg-cover bg-no-repeat" style="background-image: url('img/hero-image.jpg');">
+    <!-- Nav bar -->
+    <nav class="flex justify-between py-5 text-white lg:px-16 ">
 
+      <!-- logo -->
+      <div class="py-4 logo uppercase text-white text-2xl filter drop-shadow-md">
+          Space Flight</div>
+
+      <!-- menus bar -->
+      <div class="py-4 text-right">
+          <!-- menu button -->
+          <button id="btn-menu" class="relative top-2 lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd"
+                      d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                      clip-rule="evenodd" />
+              </svg>
+          </button>
+
+          <!-- menus list -->
+          <ul id="menus" class="hidden mt-4 lg:mt-0 lg:flex lg:gap-2">
+              <li><a href="#" class="menu-link">home</a></li>
+              <li><a href="#" class="menu-link">about</a></li>
+              <li><a href="#" class="menu-link">testimonial</a></li>
+              <li><a href="#" class="menu-link">contact us</a></li>
+              <li class="mt-2 lg:mt-0">
+                  <span class="btn"><a href="#" class="menu-link">Space Flight</a></span>
+              </li>
+          </ul>
+
+      </div>
+  </nav>
+
+
+    <!-- Hero section -->
+    <section
+        class="flex flex-col items-center sm:py-14 lg:px-5 lg:py-10 xl:px-16 xl:py-32 lg:flex-row lg:flex-wrap lg:justify-evenly">
+        <!-- text -->
+        <h1
+            class="text-white text-8xl py-2 sm:text-9xl md:mt-10 lg:mt-0 lg:py-0 lg:text-7xl xl:text-9xl 2xl:text-10xl opacity-75 filter drop-shadow">
+            explore<br>Space
+        </h1>
+        <!-- image -->
+        <img src="img/woman-surfing.png" alt="woman-surfing"
+            class="py-12 sm:w-11/12 md:p-12 md:mb-10 lg:w-2/4 lg:mb-0 lg:p-0 xl:w-6/12">
+    </section>
   </header>
 
 
