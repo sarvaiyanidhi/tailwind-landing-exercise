@@ -2,3 +2,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  /* # add custom font by self-hosting */
+  /* https://tailwindcss.com/docs/adding-base-styles#font-face-rules */
+  @font-face {
+    font-family: "Antic";
+    font-weight: regular;
+    src: url('./fonts/ANTICFONT.woff') format('woff');
+  }
+  @font-face {
+    font-family: "Bebas";
+    font-weight: regular;
+    src: url('./fonts/Bebas-Regular.woff') format('woff');
+  }
+
+  body, nav {
+    @apply font-Roboto text-base;
+  }
+  
+}
