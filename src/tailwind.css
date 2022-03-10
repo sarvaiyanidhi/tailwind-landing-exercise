@@ -20,5 +20,54 @@
   body, nav {
     @apply font-Roboto text-base;
   }
+
+  p {
+    @apply text-surf-dark-gray;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+      @apply font-Bebas text-surf-dark-gray;
+  }
+
+  .logo {
+      @apply font-Antic;
+  }
+
+  /* menu link */
+  ul#menus li {
+      @apply py-1;
+  }
+  ul#menus li a.menu-link {
+      @apply mt-1 p-2 text-white text-center uppercase hover:text-surf-black transition duration-500;
+  }
+
+  .gradient-header-title {
+      @apply text-transparent bg-clip-text from-surf-blue-100 to-surf-blue-900 bg-gradient-to-r;
+  }
   
+}
+
+/* we add the repeat style for each HTML element in components */
+@layer components {
+  /* button */
+  .btn {
+      @apply text-white rounded-lg ring-white ring-2 p-2 transition duration-500 hover:ring-surf-black;
+  }
+  .btn-surf {
+      @apply text-surf-blue rounded-xl ring-surf-blue text-4xl hover:ring-surf-dark-gray hover:text-surf-dark-gray;
+  }    
+  button {
+      @apply transition duration-500;
+  }
+
+  /* feature list */
+  .feature-list {
+      @apply flex flex-col text-center flex-wrap lg:flex-row xl:text-left xl:pt-20;
+  }
+  .feature-item {
+      @apply lg:w-2/4 xl:flex xl:flex-row xl:mb-28;
+  }    
+  .feature-item:nth-child(odd) {
+      @apply xl:pr-10;
+  }
 }
